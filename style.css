@@ -126,9 +126,9 @@ section {
   filter: blur(1px);
 }
 
-/* .images-wrapper .swiper-slide:not(.swiper-slide-active, .swiper-slide-next) {
+.images-wrapper .swiper-slide:not(.swiper-slide-active, .swiper-slide-next) {
   opacity: 0;
-} */
+}
 
 @media only screen and (max-width: 767px) {
   section {
