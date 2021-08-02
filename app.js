@@ -35,6 +35,12 @@ const imagesSwiper = new Swiper(".images-wrapper .images-swiper", {
   loop: true,
 });
 
-cardsSwiper.on("slideChange", (elem) => {
-  imagesSwiper.slideToLoop(elem.activeIndex);
+cardsSwiper.onAny((eventMsg) => {
+  if (eventMsg === "slidePrevTransitionStart") {
+    imagesSwiper.slidePrev();
+  } else if (eventMsg === "slideNextTransitionStart") {
+    imagesSwiper.slideNext();
+  } else {
+    console.log({ eventMsg });
+  }
 });
