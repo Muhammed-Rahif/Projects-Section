@@ -122,6 +122,10 @@ section {
   height: 100%;
 }
 
+.swiper-slide {
+  transition: 0.5s;
+}
+
 .images-wrapper .swiper-slide:not(.swiper-slide-active) {
   filter: blur(1px);
 }
